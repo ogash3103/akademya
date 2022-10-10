@@ -1,14 +1,15 @@
-*:focus
-{
-  outline: 2px dotted #FF7500;
-  outline-offset: 3px;
-}
+
 
 body{
  font-size: 15px;
  line-height: 1.5;
  font-family: "Roboto" , "Arial" , sans-serif;
  letter-spacing: .5;
+}
+*:focus
+{
+  outline: 2px dotted #FF7500;
+  outline-offset: 3px;
 }
 
 ul {
@@ -22,6 +23,9 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 5px solid #FF7500;
+  padding-top: 16px;
+  padding-bottom: 16px;
   background-color: #fff;
 }
 .logo-link
@@ -44,6 +48,7 @@ a{
 .sitenav-list
 {
   display: flex;
+  padding: none;
 }
 .sitenav-links {
   font-weight: 500;
@@ -63,8 +68,13 @@ a{
   opacity: 0.6;
 }
 .main-link {
-  font-size: 13px;
+  display: inline-block;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 14px;
   line-height: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
   background-color:#FF7500;
   color:#fff;
   text-decoration: none;
@@ -86,6 +96,8 @@ a{
   display: flex;
   justify-content:space-between;
   align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
   background-color:#252420;
   color: #fff;
 }
@@ -98,6 +110,7 @@ a{
   width: 80px;
   height: 3px;
   background-color:#FF7500;
+  border: none;
 }
 .hero-heading
 {
@@ -109,10 +122,15 @@ a{
 .hero-img{
   width: 510px;
   height: 510px;
+  border-radius: 8px;
 }
 
 /*  */
-
+.features
+{
+  padding-top: 210px;
+  padding-bottom: 210px;
+}
 .feature-heading
 {
   width: 440px;
@@ -125,6 +143,7 @@ a{
 {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 .feature
 {
@@ -132,8 +151,12 @@ a{
 }
 .feature-icon-wrapper
 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 100px;
+  border-radius: 50%;
   background-color: rgba(255, 117, 0, 0.2);
 }
 
@@ -149,6 +172,8 @@ a{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* padding: 120px 0 160px 0; */
+  border-radius: 12px;
   background-color: #252420;
   color: #fff;
 }
@@ -171,10 +196,16 @@ a{
   width: 440px;
   height:440px ;
   object-fit:cover ;
+  border-style: 12px;
 }
 .site-footer
 {
+  padding: 56px 0 56px 0;
   background-color:  #f8f8f8;
+}
+.site-footer ul
+{
+  padding: 0;
 }
 .site-footer-top
 {
@@ -186,6 +217,7 @@ a{
 {
   display: flex;
   align-items: center;
+  padding: 0;
 }
 .site-footer-socials a{
     color:  #252420;
@@ -201,6 +233,7 @@ a{
 }
 .site-footer-divider
 {
+  border:0;
   height: 2px;
   background-color: rgba(37, 36, 32, 0.5);
 }
