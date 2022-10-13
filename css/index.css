@@ -32,6 +32,10 @@ a{
 {
   transition: opacity .4s ease;
 }
+.logo-link img
+{
+  display: block;
+}
 .logo-link:hover
 {
   opacity: .8;
@@ -49,6 +53,16 @@ a{
 {
   display: flex;
   padding: none;
+  margin: 0;
+  margin-right: 32px;
+}
+.sitenav-item
+{
+  margin-right: 32px;
+}
+.sitenav-item:last-child
+{
+  margin-right: 0;
 }
 .sitenav-links {
   font-weight: 500;
@@ -109,16 +123,23 @@ a{
 {
   width: 80px;
   height: 3px;
-  background-color:#FF7500;
   border: none;
+  margin: 0;
+  margin-bottom: 40px;
+  background-color:#FF7500;
 }
 .hero-heading
 {
+  margin-top: 0;
+  margin-bottom: 24px;
   font-size: 40px;
   line-height:1.2;
   font-family: 'Roboto Condensed',"Roboto" "Arial" ,sans-serif;
 }
-
+.hero-text{
+  margin-top: 0;
+  margin-bottom: 32px
+}
 .hero-img{
   width: 510px;
   height: 510px;
@@ -133,6 +154,8 @@ a{
 }
 .feature-heading
 {
+  margin-top: 0;
+  margin-bottom: 72px;
   width: 440px;
   font-size: 72px;
   line-height: 1.2;
@@ -142,12 +165,17 @@ a{
 .feature-list
 {
   display: flex;
-  justify-content: space-between;
   padding: 0;
+  margin: 0;
 }
 .feature
 {
   width: 340px;
+  margin-right: 40px;
+}
+.feature:last-child
+{
+  margin-right: 0;
 }
 .feature-icon-wrapper
 {
@@ -183,11 +211,24 @@ a{
 }
 .promo-heading
 {
+  margin-top: 0;
+  margin-bottom: 24px;
   font-size: 40px;
   line-height: 48px;
   font-family: 'Roboto Condensed',"Roboto" "Arial" ,sans-serif;
 }
-
+.promo-info-wrapper
+{
+  margin-bottom: 24px;
+}
+.promo-text{
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+promo-text:last-child
+{
+ margin-bottom: 0;
+}
 .promo-highlight{
   color: #FF7500;
 }
@@ -213,15 +254,30 @@ a{
   align-items: center;
  justify-content: space-between;
 }
+/* img black */
 .site-footer-socials
 {
   display: flex;
   align-items: center;
   padding: 0;
+  margin: 0;
+}
+
+.site-footer-socials li{
+  margin-right: 16px;
+}
+.site-footer-socials li:last-child
+{
+  margin-right: 0;
 }
 .site-footer-socials a{
+   display: block;
     color:  #252420;
     transition: color .4 ease;
+}
+.site-footer-socials svg
+{
+  display: block;
 }
 .site-footer-socials a:hover
 {
@@ -233,6 +289,8 @@ a{
 }
 .site-footer-divider
 {
+  margin-top: 40px;
+  margin-bottom: 64px;
   border:0;
   height: 2px;
   background-color: rgba(37, 36, 32, 0.5);
@@ -246,6 +304,13 @@ a{
 {
  width: 224px;
  line-height: 19px;
+ margin: 0;
+ margin-right: 68px;
+ padding: 0;
+}
+.site-footer-links:last-child
+{
+  margin-right: 0;
 }
 .site-footer-links a
 {
